@@ -920,7 +920,8 @@ section:nth-of-type(6) {
 }
 
 .dp_left div.dp_imgbox img.gif {
-  width: 98%;
+  width: 92%;
+  height: 61%;
   position: absolute;
   top: 2%;
   left: 1%;
