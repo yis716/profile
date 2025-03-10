@@ -651,6 +651,7 @@ section:nth-of-type(6) {
 #wrap #rw ul,
 #wrap #dp ul {
   list-style-type: disc;
+  margin-left: 21px;
 }
 
 .mb_right .colorfont {

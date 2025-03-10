@@ -33,33 +33,45 @@ a { color: #333; text-decoration: none }
 img { border: 0; vertical-align: top; width: 100%;} 
 * { box-sizing: border-box; } 
 .hidden { display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff; } 
-.wrap { overflow: hidden;}
+.wrap { 
+    width: 100%;
+}
+
+.wr_inner{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 5%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+}
 
 /* header */
 header {
-    background: url(../image/bg/pf_bg.jpg);
+    /* background: url(../image/bg/pf_bg.jpg);
     background-position: center top;
-    background-size: cover;
+    background-size: cover; */
+    width: 40%;
+    padding: 50px;
 }
 header .image {
     border-radius: 20px;
     overflow: hidden;
-    width: 30%;
 }
 header .head_main {
     display: flex;
-    padding: 5% 10%;
-    column-gap: 10%;
+    flex-direction:column;
     align-items: center;
 }
 
 header .head_ttl .hname {
     display: flex;
-    align-items: baseline;
-    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
     & h2 {
         font-weight: 600;
-        font-size: 5vw;
+        font-size: 2vw;
     }
     & span {
         display: inline;
@@ -67,13 +79,13 @@ header .head_ttl .hname {
         font-weight: 500;
         font-size: 2vw;
         color: #d5c1e486;
-        margin-left: 10%;
     }
 }
 
 header .head_ttl {
-    width: 50%;
-    & p {font-size: 1.25rem;
+    width: 100%;
+    & p {font-size: 1.2rem;
+        text-align: center;
         & strong {
             font-weight: 600;
         }
@@ -138,8 +150,7 @@ header .head_ttl .about dl::before {
 
 /* contentArea (article) */
 #contentArea {
-    margin: 100px 0;
-    padding: 0 5%;
+    width: 100%;
     line-height: 1.7em;
 }
 #contentArea section {
@@ -285,7 +296,7 @@ footer .footer_inner {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 5%;
+        margin: 30px 0;
         & h2 {
             font-weight: 600;
             font-size: 7vw;
