@@ -209,7 +209,7 @@ header .head_ttl .about dl::before {
 
 /* footer */
 footer .footer_inner {
-    background: #ebe7ff;
+    background: rgb(255,241,229);
     color: #333;
     text-align: center;
     padding: 50px 0;
@@ -232,7 +232,7 @@ footer .footer_inner {
             transition: all 1s ease-in;
             font-size: 1.5rem;
             margin: 0 10px;
-            transform: translateX(-20px) translateY(40px);
+            /* transform: translateX(-20px) translateY(40px); */
         }
     }
     & a:hover {
