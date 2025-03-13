@@ -440,11 +440,11 @@ section:nth-of-type(6) {
 .img{
   width: 40%;
   position: absolute;
-  top: 100px;
-  right: -75px;
+  top: 79px;
+  right: -47px;
 }
 .img img{
-  width: 60%;
+  width: 50%;
   border-radius: 10px;
   height: auto;
   object-fit: cover;
