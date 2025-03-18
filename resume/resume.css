@@ -10,34 +10,157 @@
 /* font-family: "Libre Bodoni", serif; */
 
 /* CSS Reset */
-html, body, div , span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; } 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section { display: block; } 
-body { font-family:'Noto Sans KR', sans-serif; font-size: 16px; color: #333; } 
-ol, ul { list-style: none; } 
-table { border-collapse: collapse; border-spacing: 0; } 
-address { font-style: normal } 
-a { color: #333; text-decoration: none } 
-img { border: 0; vertical-align: top; width: 100%;} 
-* { box-sizing: border-box; } 
-.hidden { display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff; } 
-.wrap { 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address {
+    font-style: normal
+}
+
+a {
+    color: #333;
+    text-decoration: none
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.wrap {
     overflow: hidden;
 }
 
-.wr_inner{
+.wr_inner {
     width: 90%;
     margin: 0 auto;
     padding: 50px 5%;
@@ -54,13 +177,15 @@ header {
     width: 40%;
     padding-top: 50px;
 }
+
 header .image {
     border-radius: 20px;
     overflow: hidden;
 }
+
 header .head_main {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -69,10 +194,13 @@ header .head_ttl .hname {
     align-items: center;
     flex-direction: column;
     margin: 30px 0;
+
     & h2 {
         font-weight: 600;
         font-size: 2vw;
+        margin-bottom: 10px;
     }
+
     & span {
         display: inline;
         font-family: "Libre Bodoni", serif;
@@ -84,12 +212,16 @@ header .head_ttl .hname {
 
 header .head_ttl {
     width: 100%;
-    & p {font-size: 1.1rem;
+
+    & p {
+        font-size: 1.1rem;
         text-align: center;
+
         & strong {
             font-weight: 600;
         }
     }
+
     & .about {
         width: 100%;
         display: flex;
@@ -97,48 +229,59 @@ header .head_ttl {
         border: 1px solid #ccc;
         padding: 20px 0;
         background: #eeeeee34;
-        & dl{
+
+        & dl {
             width: 40%;
             position: relative;
             text-align: center;
-            & dt{
+
+            & dt {
                 font-size: 1rem;
                 margin-bottom: 10px;
                 font-weight: 600;
             }
-            & dd{
+
+            & dd {
                 font-size: 1rem;
                 font-weight: 400;
             }
         }
-        & div.key{
+
+        & div.key {
             display: flex;
             flex-direction: column;
             width: 100%;
             text-align: center;
-            & ul{
+
+            & ul {
                 width: 100%;
                 display: flex;
-                justify-content: center;    
+                justify-content: center;
                 align-items: center;
-                & li{
+
+                & li {
                     margin: 0 2%;
                 }
             }
         }
-        
+
     }
 }
 
-header .head_ttl br{display: none;}
+header .head_ttl br {
+    display: none;
+}
 
 header .head_ttl .about dl::before {
     content: '';
     display: block;
     width: 1px;
     height: 100%;
-    position: absolute; right: 0; top: 0;
-    background: #ccc;;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ccc;
+    ;
 }
 
 
@@ -148,21 +291,25 @@ header .head_ttl .about dl::before {
     width: 100%;
     line-height: 1.7em;
 }
+
 #contentArea section {
     margin: 50px 0;
     position: relative;
 }
+
 #contentArea .toggle-btn {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 2em;
 }
+
 #contentArea h3 {
     position: relative;
     font-size: 1.5em;
     padding: 20px 0;
 }
+
 #contentArea h3::after {
     display: block;
     position: absolute;
@@ -173,58 +320,70 @@ header .head_ttl .about dl::before {
     bottom: 10px;
     transition: all 0.5s;
 }
+
 #contentArea .toggle-container {
     transition: height 0.35s ease-in-out;
     overflow: hidden;
 }
+
 #contentArea .toggle-container:not(.active) {
     display: none;
 }
+
 #contentArea .toggle-container dl {
     display: flex;
     column-gap: 5%;
     border-bottom: 1px solid #ddd;
     padding: 30px 0;
 }
+
 #contentArea .toggle-container dt {
-        width: 30%;
-        font-size: 1.2rem;
-        font-weight: 500;
+    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-#contentArea .toggle-container dd { width: 60%;}
+
+#contentArea .toggle-container dd {
+    width: 60%;
+}
 
 #contentArea .toggle-container dd a {
-            width: 520px;
-            background: #eeeeee;
-            display: inline-block;
-            padding: 8px 30px;
-            word-break: break-all;
-            border-radius: 40px;
-            margin-bottom: 10px;
-            text-align: center;
-            transition: .3s ease-out;
+    width: 520px;
+    background: #eeeeee;
+    display: inline-block;
+    padding: 8px 30px;
+    word-break: break-all;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: .3s ease-out;
 }
+
 #contentArea .toggle-container dd a:hover {
-            background: #333;
-            color: #fff;
+    background: #333;
+    color: #fff;
 }
+
 #contentArea .toggle-container dd span {
-            display: block;
+    display: block;
 }
 
 
 /* footer */
-footer{
-    background:#FAEBD9;
+footer {
+    background: #FAEBD9;
     height: 150px;
 }
+
 footer .footer_inner {
     color: #333;
     text-align: center;
     padding: 50px 0;
+
     & p {
         /* font-weight: 300; */
     }
+
     & a {
         display: flex;
         justify-content: center;
@@ -234,6 +393,7 @@ footer .footer_inner {
         color: #333;
         overflow: hidden;
         transition: all 0.5s;
+
         & i {
             color: #7A4EC0;
             transition: all 1s ease-in;
@@ -242,8 +402,10 @@ footer .footer_inner {
             /* transform: translateX(-20px) translateY(40px); */
         }
     }
+
     & a:hover {
         color: #7A4EC0;
+
         & i {
             transform: translateX(20px) translateY(-50px);
         }
@@ -254,21 +416,34 @@ footer .footer_inner {
 
 
 @media screen and (max-width:1280px) {
-    header .head_ttl .about { width: 100%;}
+    header .head_ttl .about {
+        width: 100%;
+    }
 }
-           
+
 
 
 @media screen and (max-width:1024px) {
 
     /* header .head_ttl { width: 60%; } */
-    header .head_ttl p { font-size: 1rem; }
-    #contentArea .toggle-container dl { display: block;}
-    #contentArea .toggle-container dt, 
-    #contentArea .toggle-container dd { width: auto;}
-    #contentArea .toggle-container dt { margin: 0 0 20px 0; }
-    
-    
+    header .head_ttl p {
+        font-size: 1rem;
+    }
+
+    #contentArea .toggle-container dl {
+        display: block;
+    }
+
+    #contentArea .toggle-container dt,
+    #contentArea .toggle-container dd {
+        width: auto;
+    }
+
+    #contentArea .toggle-container dt {
+        margin: 0 0 20px 0;
+    }
+
+
 
 }
 
@@ -278,53 +453,83 @@ footer .footer_inner {
         background-position: center top;
         background-size: cover;
     }
-    header .image { margin: 0 auto 5%; width: 60%;}
 
-    header .head_main { display: block; text-align: center; padding: 10% 5%;}
+    header .image {
+        margin: 0 auto 5%;
+        width: 60%;
+    }
 
-    header .head_ttl { width: 100%; }
+    header .head_main {
+        display: block;
+        text-align: center;
+        padding: 10% 5%;
+    }
 
-    header .head_ttl p { font-size: 1.2rem; }
+    header .head_ttl {
+        width: 100%;
+    }
 
-    header .head_ttl br{display: block;}
+    header .head_ttl p {
+        font-size: 1.2rem;
+    }
+
+    header .head_ttl br {
+        display: block;
+    }
 
     header .head_ttl .hname {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 30px 0;
+
         & h2 {
             font-weight: 600;
             font-size: 7vw;
         }
-        & span {display: none;}
+
+        & span {
+            display: none;
+        }
     }
 
     header .head_ttl .about {
         display: flex;
         border: 1px solid #d5c1e486;
         background: #ffffff80;
-        & dl{
+
+        & dl {
             width: 50%;
-            & dt{ font-size: .9rem; }
-            & dd{ font-size: .9rem; }
+
+            & dt {
+                font-size: .9rem;
+            }
+
+            & dd {
+                font-size: .9rem;
+            }
         }
-        & div.key{
+
+        & div.key {
             display: flex;
             flex-direction: column;
             width: 100%;
             text-align: center;
-            & p{
+
+            & p {
                 font-size: .9rem;
                 margin-bottom: 5px;
             }
-            & ul{
-                & li{ font-size: .9rem;
+
+            & ul {
+                & li {
+                    font-size: .9rem;
                     margin: 0 2%;
                 }
             }
         }
     }
+
     #contentArea .toggle-container dd a {
         width: 400px;
         background: #eeeeee;
@@ -334,5 +539,5 @@ footer .footer_inner {
         border-radius: 40px;
         margin-bottom: 10px;
         transition: .3s ease-out;
-    }   
+    }
 }
